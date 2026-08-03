@@ -118,76 +118,81 @@ nav.main-nav a.active {
 }
 
 /* ---------- HERO ---------- */
+/* ---------- HERO ---------- */
 .hero{
-
-    background-image:
-        linear-gradient(
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.55)
-        ),
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
         url("../img/portada.jpg");
 
     background-size: cover;
-
     background-position: center;
-
     background-repeat: no-repeat;
 
-    color: white;
+    min-height: 520px;
 
-    padding: 90px 5%;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    padding: 80px 5%;
 
     position: relative;
-
     overflow: hidden;
 
     border-bottom: 1px solid var(--border);
-
-}
-.hero::before {
-  content:'';
-  position:absolute;
-  top:-160px; right:-160px;
-  width:440px; height:440px;
-  border-radius:50%;
-  border:1px solid rgba(11,95,255,0.14);
-}
-.hero::after {
-  content:'';
-  position:absolute;
-  top:-90px; right:-90px;
-  width:300px; height:300px;
-  border-radius:50%;
-  border:1px solid rgba(11,95,255,0.12);
-}
-.hero-inner { position: relative; z-index: 2; max-width: 720px; }
-.hero-eyebrow {
-  display:inline-block;
-  background: var(--blue);
-  color:#fff;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:0.8px;
-  padding:6px 14px;
-  border-radius:4px;
-  margin-bottom:18px;
-}
-.hero h1 {
-  font-size: 42px;
-  font-weight: 800;
-  letter-spacing: 0.2px;
-  line-height: 1.15;
-  color: var(--blue);
-}
-.hero h1 span { color: var(--gray-dark); }
-.hero p {
-  margin-top: 16px;
-  color: var(--gray-dark);
-  font-size: 15.5px;
-  max-width: 560px;
-  opacity: 0.9;
 }
 
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.15);
+    z-index:1;
+}
+
+.hero::after{
+    display:none;
+}
+
+.hero-inner{
+    position:relative;
+    z-index:2;
+    max-width:720px;
+}
+
+.hero-eyebrow{
+    display:inline-block;
+    background:#0B5FFF;
+    color:#FFFFFF;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.8px;
+    padding:6px 14px;
+    border-radius:4px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:42px;
+    font-weight:800;
+    letter-spacing:0.2px;
+    line-height:1.15;
+    color:#FFFFFF;
+}
+
+.hero h1 span{
+    color:#FFFFFF;
+}
+
+.hero p{
+    margin-top:16px;
+    color:#FFFFFF;
+    font-size:16px;
+    max-width:560px;
+    opacity:1;
+    text-shadow:0 2px 4px rgba(0,0,0,.5);
+}
 /* ---------- SECTIONS ---------- */
 .section {
   padding: 54px 5%;
