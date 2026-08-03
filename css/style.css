@@ -118,13 +118,31 @@ nav.main-nav a.active {
 }
 
 /* ---------- HERO ---------- */
-.hero {
-  background: linear-gradient(135deg, #F4F8FF 0%, var(--gray-light) 100%);
-  color: var(--gray-dark);
-  padding: 60px 5% 52px 5%;
-  position: relative;
-  overflow: hidden;
-  border-bottom: 1px solid var(--border);
+.hero{
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.55)
+        ),
+        url("../img/portada.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    color: white;
+
+    padding: 90px 5%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--border);
+
 }
 .hero::before {
   content:'';
