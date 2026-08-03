@@ -122,7 +122,7 @@ nav.main-nav a.active {
 .hero{
     background:
         linear-gradient(rgba(0,0,0,.10), rgba(0,0,0,.10)),
-        url("../img/portada.jpg");
+        url("../img/portadaweb.png");
 
     background-size: cover;
     background-position: center;
